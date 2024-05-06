@@ -1,0 +1,66 @@
+{
+    "public": {
+      "input": {
+        "jsonSchema": {
+          "title": "Sum",
+          "type": "object",
+          "required": ["a", "b"],
+          "properties": {
+            "a": { "type": "number", "title": "A" },
+            "b": { "type": "number", "title": "B" }
+          }
+        },
+        "jsonData": {}
+      },
+      "output": {}
+    },
+    "private": {
+      "code": [
+        {
+          "$match": {
+            "personal.module": "SUM"
+          }
+        },
+        {
+          "$lookup": {
+            "from": "test",
+            "localField": "id",
+            "foreignField": "id",
+            "as": "public.input.jsonData"
+          }
+        },
+        {
+          "$addFields": {
+            "public.input.jsonData": {
+              "$arrayElemAt": [
+                "$public.input.jsonData",
+                0
+              ]
+            }
+          }
+        },
+        {
+          "$addFields": {
+            "public.output.total": {
+              "$add": [
+                "$public.input.jsonData.a",
+                "$public.input.jsonData.b"
+              ]
+            }
+          }
+        },
+        {
+            "$project": {
+             "public":1,
+              "personal":1
+            }
+          }
+      ]
+    },
+    "personal": {
+      "name": "tuan",
+      "version": "1.0",
+      "module": "SUM"
+    }
+  }
+  

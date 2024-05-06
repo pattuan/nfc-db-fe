@@ -1,6 +1,4 @@
-const API = process.env.REACT_APP_API;
-
-console.log(API);
+const API = `nfc-fe-syyvhfs`;
 
 export default {
   API
