@@ -1,0 +1,38 @@
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.custom-form label {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem; /* Giảm kích thước của nhãn */
+}
+
+.custom-form select,
+.custom-form input[type="text"],
+.custom-form input[type="number"] {
+  width: 100%;
+  padding: 0.4rem; /* Giảm khoảng cách bên trong input */
+  margin-bottom: 0.8rem; /* Giảm khoảng cách giữa các input */
+  font-size: 0.7rem; /* Giảm kích thước của chữ */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.custom-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem; /* Giảm padding của nút */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Giảm kích thước của chữ */
+  margin-top: 0.5rem;
+}
+
+.custom-form button:hover {
+  background-color: #0056b3;
+}

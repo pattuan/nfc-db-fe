@@ -1,0 +1,27 @@
+.btn-calculate {
+    background-color: #007bff; /* Màu xanh */
+    color: #fff; /* Màu chữ trắng */
+    border: none; /* Không có viền */
+    border-radius: 20px; /* Bo tròn góc */
+    padding: 10px 20px; /* Khoảng cách giữa nút và văn bản */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    cursor: pointer; /* Con trỏ là pointer khi rê chuột vào */
+  }
+  
+  .btn-calculate:hover {
+    background-color: #0056b3; /* Màu xanh nhạt khi di chuột vào */
+  }
+  .btn-book {
+    background-color: #038614; /* Màu xanh */
+    color: #fff; /* Màu chữ trắng */
+    border: none; /* Không có viện */
+    border-radius: 20px; /* Bo tròn góc */
+    padding: 10px 20px; /* Khoảng cách giữa nút và văn bản */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đấm */
+    cursor: pointer; /* Con trỏ là pointer khi rê chuỗi vào */
+  }
+  .btn-book:hover {
+    background-color: #6db996; /* Màu xanh nhạt khi di chuột vào */
+  }
