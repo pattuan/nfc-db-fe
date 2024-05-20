@@ -6,6 +6,7 @@ import Register from "./page/register";
 import Login from "./page/login";
 import Cart from "./page/cart";
 import Luong from "./page/coban";
+import Ketoan from "./page/ketoan";
 function App() {
   return (
     
@@ -17,6 +18,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/luong" element={<Luong/>} />
+        <Route path="/ketoan" element={<Ketoan/>} />
       </Routes>
     </div>
   );
