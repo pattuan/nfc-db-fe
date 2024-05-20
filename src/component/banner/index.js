@@ -34,6 +34,7 @@ function Banner() {
             <MDBNavbarItem onClick={() => setOpenBasic(false)}><Link to='/register'><MDBNavbarLink active>Register </MDBNavbarLink></Link></MDBNavbarItem>
             <MDBNavbarItem onClick={() => setOpenBasic(false)}><Link to='/login'><MDBNavbarLink active>Login </MDBNavbarLink></Link></MDBNavbarItem>
             <MDBNavbarItem onClick={() => setOpenBasic(false)}><Link to='/cart'><MDBNavbarLink active>Cart </MDBNavbarLink></Link></MDBNavbarItem>
+            <MDBNavbarItem onClick={() => setOpenBasic(false)}><Link to='/ketoan'><MDBNavbarLink active>Salary </MDBNavbarLink></Link></MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBContainer>
